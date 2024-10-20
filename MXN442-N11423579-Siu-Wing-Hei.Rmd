@@ -550,7 +550,7 @@ cat("Precision of Titanic KNN:", precision_KNNwithoutcross, "\n")
 cat("Recall of Titanic KNN:", reca_KNNwithoutcross, "\n")
 cat("F1-Score of Titanic KNN:", f1_KNNwithoutcross, "\n")
 ```
-### when k is bigger in this case, performance is better, I have try 3,5,10,15, 
+
 
 
 
@@ -732,7 +732,7 @@ cat("Recall of Titanic KNN:", reca_KNNk4, "\n")
 cat("F1-Score of Titanic KNN:", f1_KNNk4, "\n")
 ```
 
-### not the same with Article(kfold higher performance higher), in here k=5 is higher, k=4 is the lower.
+### not the same with Article(article: kfold higher performance higher)
 
 
 
