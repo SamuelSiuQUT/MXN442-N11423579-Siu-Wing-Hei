@@ -743,7 +743,7 @@ cat("F1-Score of Titanic KNN:", f1_KNNk4, "\n")
 # Support Vector Machine(SVM) - radial
 ## SVM with out cross-validation - radial - Controls variance by squashing down most dimensions(in book)
 
-```{r}
+```{r, cache=TRUE}
 library(e1071)
 
 
@@ -802,7 +802,7 @@ cat("F1-Score of Titanic SVM:", f1_SVMwithoutcross, "\n")
 
 ## SVM with k-fold cross-validation (k=10) - radial
 
-```{r}
+```{r, cache=TRUE}
 library(e1071)
 library(caret)
 
@@ -862,7 +862,7 @@ cat("F1-Score of Titanic SVM:", f1_SVMk10, "\n")
 
 ## SVM with k-fold cross-validation (k=5) - radial
 
-```{r}
+```{r, cache=TRUE}
 library(e1071)
 library(caret)
 
@@ -887,7 +887,7 @@ conmatrix_SVMk5 <- table(pred_SVMk5, changedtpye_gender_submission$Survived)
 print(conmatrix_SVMk5)
 ```
 
-```{r}
+```{r, cache=TRUE}
 TP_SVMk5 <- sum(pred_SVMk5 == 1 & changedtpye_gender_submission$Survived == 1)
 
 TN_SVMk5 <- sum(pred_SVMk5 == 0 & changedtpye_gender_submission$Survived == 0)
@@ -902,7 +902,7 @@ cat("False Positives in Titanic SVM:", FP_SVMk5, "\n")
 cat("False Negatives in Titanic SVM:", FN_SVMk5, "\n")
 ```
 
-```{r}
+```{r, cache=TRUE}
 table(pred_SVMk5, changedtpye_gender_submission$Survived)
 
 
@@ -922,7 +922,7 @@ cat("F1-Score of Titanic SVM:", f1_SVMk5, "\n")
 
 ## SVM with k-fold cross-validation (k=4) - radial
 
-```{r}
+```{r, cache=TRUE}
 library(e1071)
 library(caret)
 
@@ -983,7 +983,7 @@ cat("F1-Score of Titanic SVM:", f1_SVMk4, "\n")
 # Support Vector Machine(SVM) - polynomial
 ## SVM with out cross-validation - polynomial - Use kernels to introduce nonlinearities in a controlled manner(in book)
 
-```{r}
+```{r, cache=TRUE}
 library(e1071)
 
 
@@ -1043,7 +1043,7 @@ cat("F1-Score of Titanic SVM:", f1_SVMwithoutcross, "\n")
 
 ## SVM with k-fold cross-validation (k=10) - polynomial
 
-```{r}
+```{r, cache=TRUE}
 library(e1071)
 library(caret)
 
@@ -1104,7 +1104,7 @@ cat("F1-Score of Titanic SVM:", f1_SVMk10, "\n")
 
 ## SVM with k-fold cross-validation (k=5) - polynomial
 
-```{r}
+```{r, cache=TRUE}
 library(e1071)
 library(caret)
 
@@ -1164,7 +1164,7 @@ cat("F1-Score of Titanic SVM:", f1_SVMk5, "\n")
 
 ## SVM with k-fold cross-validation (k=4) - polynomial
 
-```{r}
+```{r, cache=TRUE}
 library(e1071)
 library(caret)
 
@@ -1522,7 +1522,7 @@ cat("F1-Score of Titanic NB:", f1_naibak4, "\n")
 ```
 
 
-```{r}
+```{r, cache=TRUE}
 library(rpart)
 library(caret)
 library(dplyr)
@@ -1614,7 +1614,7 @@ cat("F1-Score of Titanic DT:", f1_dectrwithoutcross, "\n")
 
 ## DT with k-fold cross-validation (k=10)
 
-```{r}
+```{r, cache=TRUE}
 library(rpart)
 library(caret)
 library(dplyr)
@@ -1706,7 +1706,7 @@ cat("F1-Score of Titanic DT:", f1_dectrk10, "\n")
 
 ## DT with k-fold cross-validation (k=5)
 
-```{r}
+```{r, cache=TRUE}
 library(rpart)
 library(caret)
 library(dplyr)
@@ -1798,7 +1798,7 @@ cat("F1-Score of Titanic DT:", f1_dectrk5, "\n")
 
 ## DT with k-fold cross-validation (k=4)
 
-```{r}
+```{r, cache=TRUE}
 library(rpart)
 library(caret)
 library(dplyr)
@@ -1891,7 +1891,7 @@ cat("F1-Score of Titanic DT:", f1_dectrk4, "\n")
 # Random Forest(RF)
 ## RF with out cross-validation 
 
-```{r}
+```{r, cache=TRUE}
 library(randomForest)
 
 process_test$Sex <- factor(process_test$Sex, levels = levels(process_train$Sex))
@@ -1995,7 +1995,7 @@ cat("F1-Score of Titanic RF:", f1_ranfowithoutcross, "\n")
 
 ## RF with k-fold cross-validation (k=10)
 
-```{r}
+```{r, cache=TRUE}
 library(randomForest)
 
 process_test$Sex <- factor(process_test$Sex, levels = levels(process_train$Sex))
@@ -2110,7 +2110,7 @@ cat("F1-Score of Titanic RF:", f1_ranfok10, "\n")
 
 ## RF with k-fold cross-validation (k=5)
 
-```{r}
+```{r, cache=TRUE}
 library(randomForest)
 
 process_test$Sex <- factor(process_test$Sex, levels = levels(process_train$Sex))
@@ -2225,7 +2225,7 @@ cat("F1-Score of Titanic RF:", f1_ranfok5, "\n")
 
 ## RF with k-fold cross-validation (k=4)
 
-```{r}
+```{r, cache=TRUE}
 library(randomForest)
 
 process_test$Sex <- factor(process_test$Sex, levels = levels(process_train$Sex))
