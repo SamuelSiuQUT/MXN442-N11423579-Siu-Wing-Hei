@@ -5,21 +5,8 @@ output:
   html_document:
     pdf_document:
       latex_engine: xelatex
-date: "2024-10-09"
+date: "2024-10-20"
 ---
-
----
-title: "N11423579 SIU Wing Hei Final Report"
-output: html_document
-  pdf_document:
-    latex_engine: xelatex
----
-
-
-```{r setup, include=False}
-#####
-```
-
 
 
 
@@ -3155,6 +3142,15 @@ cat("Precision of Titanic DT:", precision_nnwithk10, "\n")
 cat("Recall of Titanic DT:", reca_nnwithk10, "\n")
 cat("F1-Score of Titanic DT:", f1_nnwithk10, "\n")
 ```
+
+
+
+
+
+
+
+
+
 
 
 
