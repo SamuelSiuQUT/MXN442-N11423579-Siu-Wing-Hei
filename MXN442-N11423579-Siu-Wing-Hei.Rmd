@@ -15,11 +15,11 @@ date: "2024-10-20"
 
 
 ```{r}
-train <- read.csv("C:/Users/siusa/Desktop/QUT課程/Y2S2/MXN442_24se2 Modern Statistical Computing Techniques/Assignment 3 Final Report/Rstudio/Open Titanic data/train.csv")
+train <- read.csv("C:/Users/siusa/Downloads/MXN442-N11423579-Siu-Wing-Hei/train.csv")
 ```
 
 ```{r}
-test <- read.csv("C:/Users/siusa/Desktop/QUT課程/Y2S2/MXN442_24se2 Modern Statistical Computing Techniques/Assignment 3 Final Report/Rstudio/Open Titanic data/test.csv")
+test <- read.csv("C:/Users/siusa/Downloads/MXN442-N11423579-Siu-Wing-Hei/test.csv")
 ```
 
 ```{r}
@@ -28,7 +28,7 @@ test$Name[415] <- "Oliva y Ocana, Miss. Fermina"# becuase Oliva y Ocana, Dona. F
 
 
 ```{r}
-gender_submission <- read.csv("C:/Users/siusa/Desktop/QUT課程/Y2S2/MXN442_24se2 Modern Statistical Computing Techniques/Assignment 3 Final Report/Rstudio/Open Titanic data/gender_submission.csv")
+gender_submission <- read.csv("C:/Users/siusa/Downloads/MXN442-N11423579-Siu-Wing-Hei/gender_submission.csv")
 ```
 
 # Data processing
@@ -2340,12 +2340,14 @@ cat("F1-Score of Titanic RF:", f1_ranfok4, "\n")
 
 # Below is GBM-XGBoost and Neural Networks, since I need to use new features so I will using original data and start it again.
 
+
+
 ```{r}
-train <- read.csv("C:/Users/siusa/Desktop/QUT課程/Y2S2/MXN442_24se2 Modern Statistical Computing Techniques/Assignment 3 Final Report/Rstudio/Open Titanic data/train.csv")
+train <- read.csv("C:/Users/siusa/Downloads/MXN442-N11423579-Siu-Wing-Hei/train.csv")
 ```
 
 ```{r}
-test <- read.csv("C:/Users/siusa/Desktop/QUT課程/Y2S2/MXN442_24se2 Modern Statistical Computing Techniques/Assignment 3 Final Report/Rstudio/Open Titanic data/test.csv")
+test <- read.csv("C:/Users/siusa/Downloads/MXN442-N11423579-Siu-Wing-Hei/test.csv")
 ```
 
 ```{r}
@@ -2367,7 +2369,7 @@ cat(test$Fare[153])
 
 
 ```{r}
-gender_submission <- read.csv("C:/Users/siusa/Desktop/QUT課程/Y2S2/MXN442_24se2 Modern Statistical Computing Techniques/Assignment 3 Final Report/Rstudio/Open Titanic data/gender_submission.csv")
+gender_submission <- read.csv("C:/Users/siusa/Downloads/MXN442-N11423579-Siu-Wing-Hei/gender_submission.csv")
 ```
 
 # Data processing
