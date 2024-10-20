@@ -505,7 +505,7 @@ process_test$Nickname <- factor(process_test$Nickname, levels = levels(process_t
 
 
 set.seed(1)  
-KNNwithoutcross <- kknn(Survived ~ Pclass + Sex + Age + SibSp + Parch + Nickname, train = process_train, test = process_test, k = 10)
+KNNwithoutcross <- kknn(Survived ~ Pclass + Sex + Age + SibSp + Parch + Nickname, train = process_train, test = process_test, k = 5)
 
 
 pre_KNNwithoutcross <- predict(KNNwithoutcross, newdata = process_test)
@@ -565,10 +565,10 @@ set.seed(1)
 k10 <- trainControl(method = "cv", number = 10)
 
 KNNk10 <- train(Survived ~ Pclass + Sex + Age + SibSp + Parch + Nickname, 
-                         data = process_train, 
-                         method = "kknn", 
-                         trControl = k10,
-                         tuneLength = 10) #range of 10 different potential k-values to find the optimal one
+                data = process_train, trControl = k10, method = "kknn",
+                tuneGrid = expand.grid(kmax = 5,  distance = 2, kernel = "optimal"))  
+
+
 print(KNNk10)
 
 
@@ -627,10 +627,8 @@ set.seed(1)
 k5 <- trainControl(method = "cv", number = 5)
 
 KNNk5 <- train(Survived ~ Pclass + Sex + Age + SibSp + Parch + Nickname, 
-                         data = process_train, 
-                         method = "kknn", 
-                         trControl = k5,
-                         tuneLength = 10) #range of 10 different potential k-values to find the optimal one
+                data = process_train, trControl = k5, method = "kknn",
+                tuneGrid = expand.grid(kmax = 5,  distance = 2, kernel = "optimal"))  
 print(KNNk5)
 
 
@@ -687,10 +685,8 @@ set.seed(1)
 k4 <- trainControl(method = "cv", number = 4)
 
 KNNk4 <- train(Survived ~ Pclass + Sex + Age + SibSp + Parch + Nickname, 
-                         data = process_train, 
-                         method = "kknn", 
-                         trControl = k4,
-                         tuneLength = 10) #range of 10 different potential k-values to find the optimal one
+                data = process_train, trControl = k4, method = "kknn",
+                tuneGrid = expand.grid(kmax = 5,  distance = 2, kernel = "optimal"))  
 print(KNNk4)
 
 
