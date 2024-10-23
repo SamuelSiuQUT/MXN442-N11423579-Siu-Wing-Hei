@@ -25,10 +25,15 @@ gender_submission <- read.csv("C:/Users/siusa/Downloads/MXN442-N11423579-Siu-Win
 
 ## Folder contains
 Introduction: README.md
+
 Paper: Analysis and Prediction of the Survival of Titanic Passengers Using Machine Learning
+
 Report: MXN442 Final Project Report Siu Wing Hei N11423579
+
 R markdown: MXN442-N11423579-Siu-Wing-Hei.Rmd
+
 Knit pdf(R markdown): MXN442-N11423579-Siu-Wing-Hei.pdf
+
 Data set: train.csv, test.csv, gender_submission.csv
 
 ## R studio version
