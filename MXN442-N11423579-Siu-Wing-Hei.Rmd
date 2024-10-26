@@ -2753,10 +2753,10 @@ TN_nnwithoutcross <- sum(pre_nnwithoutcross == 0 & changedtpye_gender_submission
 FP_nnwithoutcross <- sum(pre_nnwithoutcross == 1 & changedtpye_gender_submission$Survived == 0)
 FN_nnwithoutcross <- sum(pre_nnwithoutcross == 0 & changedtpye_gender_submission$Survived == 1)
 
-cat("True Positives in Titanic XGBoost (TP):", TP_nnwithoutcross, "\n")
-cat("True Negatives in Titanic XGBoost (TN):", TN_nnwithoutcross, "\n")
-cat("False Positives in Titanic XGBoost (FP):", FP_nnwithoutcross, "\n")
-cat("False Negatives in Titanic XGBoost (FN):", FN_nnwithoutcross, "\n")
+cat("True Positives in Titanic NN (TP):", TP_nnwithoutcross, "\n")
+cat("True Negatives in Titanic NN (TN):", TN_nnwithoutcross, "\n")
+cat("False Positives in Titanic NN (FP):", FP_nnwithoutcross, "\n")
+cat("False Negatives in Titanic NN (FN):", FN_nnwithoutcross, "\n")
 ```
 
 ```{r}
@@ -2767,10 +2767,10 @@ precision_nnwithoutcross <- TP_nnwithoutcross / (TP_nnwithoutcross + FP_nnwithou
 recall_nnwithoutcross <- TP_nnwithoutcross / (TP_nnwithoutcross + FN_nnwithoutcross)
 f1_nnwithoutcross <- 2 * ((precision_nnwithoutcross * recall_nnwithoutcross) / (precision_nnwithoutcross + recall_nnwithoutcross))
 
-cat("Accuracy of Titanic XGBoost:", acc_nnwithoutcross, "\n")
-cat("Precision of Titanic XGBoost:", precision_nnwithoutcross, "\n")
-cat("Recall of Titanic XGBoost:", recall_nnwithoutcross, "\n")
-cat("F1-Score of Titanic XGBoost:", f1_nnwithoutcross, "\n")
+cat("Accuracy of Titanic NN:", acc_nnwithoutcross, "\n")
+cat("Precision of Titanic NN:", precision_nnwithoutcross, "\n")
+cat("Recall of Titanic NN:", recall_nnwithoutcross, "\n")
+cat("F1-Score of Titanic NN:", f1_nnwithoutcross, "\n")
 ```
 
 
@@ -2879,10 +2879,10 @@ FP_nnwithk10 <- sum(pre_nnwithk10 == 1 & changedtpye_gender_submission$Survived 
 
 FN_nnwithk10 <- sum(pre_nnwithk10 == 0 & changedtpye_gender_submission$Survived == 1)
 
-cat("True Positives in Titanic DT:", TP_nnwithk10, "\n")
-cat("True Negatives in Titanic DT:", TN_nnwithk10, "\n")
-cat("False Positives in Titanic DT:", FP_nnwithk10, "\n")
-cat("False Negatives in Titanic DT:", FN_nnwithk10, "\n")
+cat("True Positives in Titanic NN:", TP_nnwithk10, "\n")
+cat("True Negatives in Titanic NN:", TN_nnwithk10, "\n")
+cat("False Positives in Titanic NN:", FP_nnwithk10, "\n")
+cat("False Negatives in Titanic NN:", FN_nnwithk10, "\n")
 ```
 
 ```{r}
@@ -2896,10 +2896,10 @@ reca_nnwithk10 <- (TP_nnwithk10) / (TP_nnwithk10 + FN_nnwithk10)
 
 f1_nnwithk10 <- 2 * ((precision_nnwithk10 * reca_nnwithk10) / (precision_nnwithk10 + reca_nnwithk10))
 
-cat("Accuracy of Titanic DT:", acc_nnwithk10, "\n")
-cat("Precision of Titanic DT:", precision_nnwithk10, "\n")
-cat("Recall of Titanic DT:", reca_nnwithk10, "\n")
-cat("F1-Score of Titanic DT:", f1_nnwithk10, "\n")
+cat("Accuracy of Titanic NN:", acc_nnwithk10, "\n")
+cat("Precision of Titanic NN:", precision_nnwithk10, "\n")
+cat("Recall of Titanic NN:", reca_nnwithk10, "\n")
+cat("F1-Score of Titanic NN:", f1_nnwithk10, "\n")
 ```
 
 
