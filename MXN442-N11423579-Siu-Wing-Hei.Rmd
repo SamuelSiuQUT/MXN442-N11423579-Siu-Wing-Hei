@@ -2775,7 +2775,7 @@ cat("F1-Score of Titanic XGBoost:", f1_nnwithoutcross, "\n")
 
 
 
-## Neural Networks with k-fold cross-validation (k=4)
+## Neural Networks with k-fold cross-validation (k=10)
 
 ```{r, cache=TRUE} 
 # single layer feedforward neural network
