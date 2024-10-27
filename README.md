@@ -28,13 +28,19 @@ Introduction: README.md
 
 Paper: Analysis and Prediction of the Survival of Titanic Passengers Using Machine Learning
 
-Report: MXN442 Final Project Report Siu Wing Hei N11423579
+Report: MXN442 Final Project Report Siu Wing Hei N11423579.pdf
 
 R markdown: MXN442-N11423579-Siu-Wing-Hei.Rmd
 
 Knit pdf(R markdown): MXN442-N11423579-Siu-Wing-Hei.pdf
 
 Data set: train.csv, test.csv, gender_submission.csv
+
+Appendix 1 Paper Result
+
+Appendix 2 My Replication Result
+
+Appendix 3 New Method (XGBoost, Neural Networks)
 
 ## R studio version
 RStudio-2024.09.0-375
